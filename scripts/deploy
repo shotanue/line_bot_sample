@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+gcloud functions deploy bot-func --runtime=go111 --trigger-http --entry-point=Webhook \
+        --set-env-vars="GCP_PROJECT_ID"=${PROJECT_NAME},"KMS_KEY_RING_NAME"="${KMS_KEY_RING_NAME}","KMS_LINE_SECRETS_KEY_NAME"="${KMS_LINE_SECRETS_KEY_NAME}"

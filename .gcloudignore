@@ -1,0 +1,9 @@
+.gcloudignore
+.git
+.gitignore
+node_modules
+secrets.json
+secrets.template.json
+.idea
+Makefile
+scripts
